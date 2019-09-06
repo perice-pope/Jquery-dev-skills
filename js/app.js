@@ -1,31 +1,20 @@
 
-// $('.button').on("click", function() {
-//     words = $('input').val() 
-//     console.log(words)   
-//     // words.append("<p>test<p>")
-// })  
-
-
 $('.button').click(function(e){
     e.preventDefault()
     $('.future-skills').append($(
         '<p>', 
-        { text: $('input').val() },
-        "<li><button class='remove'>X</button>"
+        { text: $('input').val() }, 
+        
         )
-
-    );
+    ) 
 });
 
+$('.button').on('click', '#remove', function(f) {
+    f.preventDefault()
+    $(this).closest('p').remove(); 
+});
 
-
-//     <td><button class="remove">X</button> ${newSkill}</td>
-//     </tr>
-
-
-//     $('.button').on('click', removeSkill)
-//     });
-//     function removeSkill(evt){
-//        $(evt.target).parent().remove()
-//        console.log('boom')
-//     }
+    function remove(evt){
+       $(evt.target).parent().remove()
+       console.log('event-killed-by-destroyer')
+    }
