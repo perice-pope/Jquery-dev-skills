@@ -4,8 +4,25 @@ body {
 
 h1 {
 text-align: center; 
+background-color: rgb(72, 143, 72);
+color: white; 
+font-size: 18px; 
+height: 30px;
 }
 
 form {
 display: inline-block; 
+}
+
+p {
+    color: orange;
+}
+
+button {
+    background-color: red; 
+}
+
+input {
+    border-style: solid; 
+    border-color: green; 
 }
